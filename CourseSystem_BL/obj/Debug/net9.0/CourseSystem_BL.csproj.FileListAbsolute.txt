@@ -1,0 +1,15 @@
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\bin\Debug\net9.0\CourseSystem_BL.deps.json
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\bin\Debug\net9.0\CourseSystem_BL.dll
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\bin\Debug\net9.0\CourseSystem_BL.pdb
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\bin\Debug\net9.0\CourseSystem_DAL.dll
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\bin\Debug\net9.0\CourseSystem_DAL.pdb
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\obj\Debug\net9.0\CourseSystem_BL.csproj.AssemblyReference.cache
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\obj\Debug\net9.0\CourseSystem_BL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\obj\Debug\net9.0\CourseSystem_BL.AssemblyInfoInputs.cache
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\obj\Debug\net9.0\CourseSystem_BL.AssemblyInfo.cs
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\obj\Debug\net9.0\CourseSystem_BL.csproj.CoreCompileInputs.cache
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\obj\Debug\net9.0\CourseSy.800B3916.Up2Date
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\obj\Debug\net9.0\CourseSystem_BL.dll
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\obj\Debug\net9.0\refint\CourseSystem_BL.dll
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\obj\Debug\net9.0\CourseSystem_BL.pdb
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_BL\obj\Debug\net9.0\ref\CourseSystem_BL.dll
