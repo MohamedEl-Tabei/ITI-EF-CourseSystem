@@ -142,3 +142,12 @@ E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\bin\Debug\net9.0-wi
 E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.FormMain.resources
 E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Instructor.FormInstructorMain.resources
 E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Instructor.FormInstructorGetAll.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.sourcelink.json
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Instructor.FormInstructorUpdate.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Properties.Resources.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Instructor.FormInstructorGetPhone.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Instructor.FormInstructorCreate.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Instructor.FormInstructorGetByDepartment.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Department.FormDepartmentMain.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Department.FormDepartmenGetAll.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Department.FormDepartmentGetAndUpdate.resources

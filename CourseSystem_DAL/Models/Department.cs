@@ -11,13 +11,20 @@ namespace CourseSystem_DAL
         public Guid Id { get; set; }
         public string? Name { get; set; }
         public string? Location { get; set; }
-
-
-
         #region Manager
         public Instructor? Manager { get; set; }
         public Guid ManagerId { get; set; }
         #endregion
+
+        public Department(Guid id,string name,string location,Guid managerId)
+        {
+            Id = id;
+            Name = name;
+            Location = location;
+            ManagerId = managerId;
+        }
+
+
         public List<Instructor>? Instructors { get; set; }
     }
 }

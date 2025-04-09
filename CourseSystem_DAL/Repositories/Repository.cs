@@ -14,7 +14,10 @@ namespace CourseSystem_DAL
         {
             _context = new MyContext();
         }
-        public async Task<List<T>> GetAsync()=>await _context.Set<T>().ToListAsync();
+        public  List<T> Get()=> _context.Set<T>().ToList();
+        public T GetById(Guid id) => _context.Set<T>().Find(id);
+        public void Create(T t)=>_context.Set<T>().Add(t);
+        public void SaveChanges()=>_context.SaveChanges();
 
     }
 }

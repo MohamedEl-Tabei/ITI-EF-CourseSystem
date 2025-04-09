@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CourseSystem.Forms.Department;
 using CourseSystem.Forms.Instructor;
 
 namespace CourseSystem.Forms
@@ -20,10 +21,15 @@ namespace CourseSystem.Forms
 
         private void btnMainInstructor_Click(object sender, EventArgs e)
         {
-            
-            var formMainInstructor=new FormInstructorMain();
+            var formMainInstructor = new FormInstructorMain();
             formMainInstructor.ShowDialog();
-            
+
+        }
+
+        private void btnGetById_Click(object sender, EventArgs e)
+        {
+            var formMainDepartment = new FormDepartmentMain();
+            formMainDepartment.ShowDialog();
         }
     }
 }

@@ -13,6 +13,7 @@ namespace CourseSystem_DAL
             builder.Property(H => H.FirstName).IsRequired().HasMaxLength(255);
             builder.Property(H => H.LastName).IsRequired().HasMaxLength(255);
             builder.Property(H => H.Phone).IsRequired().HasMaxLength(255);
+            builder.HasIndex(H => H.Phone).IsUnique();
             builder.HasData(DemoData.GetDemoInstructors());
         }
     }

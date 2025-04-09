@@ -18,6 +18,7 @@ namespace CourseSystem_DAL
             #endregion
             builder.Property(D=>D.Name).IsRequired().HasMaxLength(255);
             builder.Property(D=>D.Location).HasMaxLength(255);
+            builder.HasData(DemoData.GetDemoDepartments());
         }
     }
 }

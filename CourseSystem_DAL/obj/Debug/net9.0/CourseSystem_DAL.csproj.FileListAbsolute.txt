@@ -10,3 +10,4 @@ E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_DAL\obj\Debug\net9.
 E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_DAL\obj\Debug\net9.0\refint\CourseSystem_DAL.dll
 E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_DAL\obj\Debug\net9.0\CourseSystem_DAL.pdb
 E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_DAL\obj\Debug\net9.0\ref\CourseSystem_DAL.dll
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem_DAL\obj\Debug\net9.0\CourseSystem_DAL.sourcelink.json

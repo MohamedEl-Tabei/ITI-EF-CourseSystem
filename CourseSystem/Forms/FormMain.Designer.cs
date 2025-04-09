@@ -29,25 +29,41 @@
         private void InitializeComponent()
         {
             btnMainInstructor = new Button();
+            btnGetById = new Button();
             SuspendLayout();
             // 
             // btnMainInstructor
             // 
             btnMainInstructor.BackColor = Color.MediumSeaGreen;
+            btnMainInstructor.Cursor = Cursors.Hand;
             btnMainInstructor.ForeColor = SystemColors.ControlLightLight;
-            btnMainInstructor.Location = new Point(31, 96);
+            btnMainInstructor.Location = new Point(12, 12);
             btnMainInstructor.Name = "btnMainInstructor";
-            btnMainInstructor.Size = new Size(94, 29);
+            btnMainInstructor.Size = new Size(182, 107);
             btnMainInstructor.TabIndex = 1;
             btnMainInstructor.Text = "Instructor";
             btnMainInstructor.UseVisualStyleBackColor = false;
             btnMainInstructor.Click += btnMainInstructor_Click;
+            // 
+            // btnGetById
+            // 
+            btnGetById.BackColor = Color.SeaGreen;
+            btnGetById.Cursor = Cursors.Hand;
+            btnGetById.ForeColor = SystemColors.ControlLightLight;
+            btnGetById.Location = new Point(222, 10);
+            btnGetById.Name = "btnGetById";
+            btnGetById.Size = new Size(182, 111);
+            btnGetById.TabIndex = 3;
+            btnGetById.Text = "Department";
+            btnGetById.UseVisualStyleBackColor = false;
+            btnGetById.Click += btnGetById_Click;
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnGetById);
             Controls.Add(btnMainInstructor);
             Name = "FormMain";
             Text = "FormMain";
@@ -57,5 +73,6 @@
         #endregion
 
         private Button btnMainInstructor;
+        private Button btnGetById;
     }
 }

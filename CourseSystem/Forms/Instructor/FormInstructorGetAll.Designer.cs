@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             dgvInstructors = new DataGridView();
-            btnInstructorMain = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvInstructors).BeginInit();
             SuspendLayout();
             // 
@@ -40,25 +39,14 @@
             dgvInstructors.Name = "dgvInstructors";
             dgvInstructors.ReadOnly = true;
             dgvInstructors.RowHeadersWidth = 51;
-            dgvInstructors.Size = new Size(776, 288);
+            dgvInstructors.Size = new Size(776, 384);
             dgvInstructors.TabIndex = 0;
-            // 
-            // btnInstructorMain
-            // 
-            btnInstructorMain.Location = new Point(12, 330);
-            btnInstructorMain.Name = "btnInstructorMain";
-            btnInstructorMain.Size = new Size(94, 29);
-            btnInstructorMain.TabIndex = 1;
-            btnInstructorMain.Text = "Home";
-            btnInstructorMain.UseVisualStyleBackColor = true;
-            btnInstructorMain.Click += btnInstructorMain_Click;
             // 
             // FormInstructorGetAll
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnInstructorMain);
             Controls.Add(dgvInstructors);
             Name = "FormInstructorGetAll";
             Text = "FormInstructorGetAll";
@@ -69,6 +57,5 @@
         #endregion
 
         private DataGridView dgvInstructors;
-        private Button btnInstructorMain;
     }
 }

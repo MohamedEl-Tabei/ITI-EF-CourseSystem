@@ -46,6 +46,38 @@ namespace CourseSystem_DAL.Migrations
                         .IsUnique();
 
                     b.ToTable("Departments");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("045e90a9-bd08-45ae-80c7-fa8ee939fd74"),
+                            ManagerId = new Guid("0e65f178-8ad3-442b-859f-48d6d964b044"),
+                            Name = "SD"
+                        },
+                        new
+                        {
+                            Id = new Guid("c11ea3d8-7da5-44bd-a313-e1a6fbafad79"),
+                            ManagerId = new Guid("30a2d33f-c405-4b72-a7ad-b21e630ada5e"),
+                            Name = "UI"
+                        },
+                        new
+                        {
+                            Id = new Guid("cb84409a-44b6-49fa-8a67-92ae33862119"),
+                            ManagerId = new Guid("8c8e5e8e-2210-4c96-9a78-51f66471627b"),
+                            Name = "Network"
+                        },
+                        new
+                        {
+                            Id = new Guid("d5b7c05f-4fbf-44c3-b181-2176aa8ea9e2"),
+                            ManagerId = new Guid("a7405fe2-f9ff-488c-937b-ff60e3e9c24d"),
+                            Name = "Mobile"
+                        },
+                        new
+                        {
+                            Id = new Guid("d67ae4ea-6fb4-4dbd-af73-90192db76b5a"),
+                            ManagerId = new Guid("b6e66f14-8e6d-4c03-9c12-753ed9e4f74d"),
+                            Name = "Cloud"
+                        });
                 });
 
             modelBuilder.Entity("CourseSystem_DAL.Instructor", b =>
@@ -76,6 +108,9 @@ namespace CourseSystem_DAL.Migrations
 
                     b.HasIndex("DepartmentId");
 
+                    b.HasIndex("Phone")
+                        .IsUnique();
+
                     b.ToTable("Instructors");
 
                     b.HasData(
@@ -88,10 +123,10 @@ namespace CourseSystem_DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("b6e66f14-8e6d-4c03-9c12-753ed9e4f74d"),
-                            FirstName = "Ali",
-                            LastName = "Basem",
-                            Phone = "01220210456"
+                            Id = new Guid("30a2d33f-c405-4b72-a7ad-b21e630ada5e"),
+                            FirstName = "Basem",
+                            LastName = "Ahmed",
+                            Phone = "01020210541"
                         },
                         new
                         {
@@ -109,17 +144,17 @@ namespace CourseSystem_DAL.Migrations
                         },
                         new
                         {
+                            Id = new Guid("b6e66f14-8e6d-4c03-9c12-753ed9e4f74d"),
+                            FirstName = "Ali",
+                            LastName = "Basem",
+                            Phone = "01220210456"
+                        },
+                        new
+                        {
                             Id = new Guid("c8b09a7f-0c3a-4a97-b586-55f23cfed9a6"),
                             FirstName = "Omer",
                             LastName = "Ali",
                             Phone = "01220210897"
-                        },
-                        new
-                        {
-                            Id = new Guid("30a2d33f-c405-4b72-a7ad-b21e630ada5e"),
-                            FirstName = "Basem",
-                            LastName = "Ahmed",
-                            Phone = "01020210541"
                         },
                         new
                         {

@@ -21,9 +21,6 @@ namespace CourseSystem.Forms.Instructor
             dgvInstructors.DataSource = managerInstructor.GetWithDepartment();
         }
 
-        private void btnInstructorMain_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+       
     }
 }
