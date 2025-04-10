@@ -29,5 +29,11 @@ namespace CourseSystem.Forms.Department
             var formDepartmentGetAndUpdate = new FormDepartmentGetAndUpdate();
             formDepartmentGetAndUpdate.ShowDialog();
         }
+
+        private void btnInstructorAdd_Click(object sender, EventArgs e)
+        {
+            var formDepartmentCreate = new FormDepartmentCreate();
+            formDepartmentCreate.ShowDialog();
+        }
     }
 }

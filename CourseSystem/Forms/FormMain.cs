@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CourseSystem.Forms.Course;
 using CourseSystem.Forms.Department;
 using CourseSystem.Forms.Instructor;
+using CourseSystem.Forms.Student;
 
 namespace CourseSystem.Forms
 {
@@ -30,6 +32,18 @@ namespace CourseSystem.Forms
         {
             var formMainDepartment = new FormDepartmentMain();
             formMainDepartment.ShowDialog();
+        }
+
+        private void btnCourse_Click(object sender, EventArgs e)
+        {
+            var formMainCourse = new FormCourseMain();
+            formMainCourse.ShowDialog();
+        }
+
+        private void btnInstructorAdd_Click(object sender, EventArgs e)
+        {
+            var form = new FormStudentMain();
+            form.ShowDialog();
         }
     }
 }

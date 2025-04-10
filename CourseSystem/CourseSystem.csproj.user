@@ -1,7 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Forms\Course\FormCourseCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Course\FormCourseGetAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Course\FormCourseGetByDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Course\FormCourseGetByInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Course\FormCourseMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Course\FormCourseUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Department\FormDepartmenGetAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Department\FormDepartmentCreate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Department\FormDepartmentGetAndUpdate.cs">
@@ -29,6 +50,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Instructor\FormInstructorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Student\FormStudentMain.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

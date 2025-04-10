@@ -22,6 +22,77 @@ namespace CourseSystem_DAL.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("CourseSystem_DAL.Course", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("DepartmentId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Duration")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("InstructorId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DepartmentId");
+
+                    b.HasIndex("InstructorId");
+
+                    b.ToTable("Courses");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("1e33dd1b-3a4d-48f5-84c1-565170287dbf"),
+                            DepartmentId = new Guid("045e90a9-bd08-45ae-80c7-fa8ee939fd74"),
+                            Duration = 4,
+                            InstructorId = new Guid("0e65f178-8ad3-442b-859f-48d6d964b044"),
+                            Name = "C#"
+                        },
+                        new
+                        {
+                            Id = new Guid("2ce2280b-8172-4045-8bdc-270794694177"),
+                            DepartmentId = new Guid("c11ea3d8-7da5-44bd-a313-e1a6fbafad79"),
+                            Duration = 5,
+                            InstructorId = new Guid("30a2d33f-c405-4b72-a7ad-b21e630ada5e"),
+                            Name = "Java 0Script"
+                        },
+                        new
+                        {
+                            Id = new Guid("5ef659b6-d082-41d0-8f5d-984d883a3482"),
+                            DepartmentId = new Guid("cb84409a-44b6-49fa-8a67-92ae33862119"),
+                            Duration = 6,
+                            InstructorId = new Guid("8c8e5e8e-2210-4c96-9a78-51f66471627b"),
+                            Name = "Secuirety"
+                        },
+                        new
+                        {
+                            Id = new Guid("f78d5fdf-66b7-44be-b9f2-1e42be682a74"),
+                            DepartmentId = new Guid("d5b7c05f-4fbf-44c3-b181-2176aa8ea9e2"),
+                            Duration = 7,
+                            InstructorId = new Guid("a7405fe2-f9ff-488c-937b-ff60e3e9c24d"),
+                            Name = "Flutter"
+                        },
+                        new
+                        {
+                            Id = new Guid("fe17271a-1f45-4a17-b661-30fc9b377f98"),
+                            DepartmentId = new Guid("d67ae4ea-6fb4-4dbd-af73-90192db76b5a"),
+                            Duration = 8,
+                            InstructorId = new Guid("b6e66f14-8e6d-4c03-9c12-753ed9e4f74d"),
+                            Name = "Azure"
+                        });
+                });
+
             modelBuilder.Entity("CourseSystem_DAL.Department", b =>
                 {
                     b.Property<Guid>("Id")
@@ -165,6 +236,25 @@ namespace CourseSystem_DAL.Migrations
                         });
                 });
 
+            modelBuilder.Entity("CourseSystem_DAL.Course", b =>
+                {
+                    b.HasOne("CourseSystem_DAL.Department", "Department")
+                        .WithMany("Courses")
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("CourseSystem_DAL.Instructor", "Instructor")
+                        .WithMany("Courses")
+                        .HasForeignKey("InstructorId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Department");
+
+                    b.Navigation("Instructor");
+                });
+
             modelBuilder.Entity("CourseSystem_DAL.Department", b =>
                 {
                     b.HasOne("CourseSystem_DAL.Instructor", "Manager")
@@ -187,11 +277,15 @@ namespace CourseSystem_DAL.Migrations
 
             modelBuilder.Entity("CourseSystem_DAL.Department", b =>
                 {
+                    b.Navigation("Courses");
+
                     b.Navigation("Instructors");
                 });
 
             modelBuilder.Entity("CourseSystem_DAL.Instructor", b =>
                 {
+                    b.Navigation("Courses");
+
                     b.Navigation("ManagedDepartment");
                 });
 #pragma warning restore 612, 618

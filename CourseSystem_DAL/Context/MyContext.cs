@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CourseSystem_DAL.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CourseSystem_DAL
 {
@@ -8,6 +9,7 @@ namespace CourseSystem_DAL
 
         public DbSet<Instructor>? Instructors { get; set; }
         public DbSet<Department>? Departments { get; set; }
+        public DbSet<Course>? Courses { get; set; }
 
         #endregion
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer("Server=.;Database=CourseSystem;Trusted_Connection=true;TrustServerCertificate=true;");

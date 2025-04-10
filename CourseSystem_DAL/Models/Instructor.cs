@@ -15,5 +15,6 @@ namespace CourseSystem_DAL
         {
             DepartmentId = departmentId;
         }
+        public List<Course>? Courses { get; set; }
     }
 }

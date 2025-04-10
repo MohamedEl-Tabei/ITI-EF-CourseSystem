@@ -30,6 +30,9 @@
         {
             btnMainInstructor = new Button();
             btnGetById = new Button();
+            btnCourse = new Button();
+            btnInstructorAdd = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // btnMainInstructor
@@ -37,7 +40,7 @@
             btnMainInstructor.BackColor = Color.MediumSeaGreen;
             btnMainInstructor.Cursor = Cursors.Hand;
             btnMainInstructor.ForeColor = SystemColors.ControlLightLight;
-            btnMainInstructor.Location = new Point(12, 12);
+            btnMainInstructor.Location = new Point(86, 42);
             btnMainInstructor.Name = "btnMainInstructor";
             btnMainInstructor.Size = new Size(182, 107);
             btnMainInstructor.TabIndex = 1;
@@ -50,7 +53,7 @@
             btnGetById.BackColor = Color.SeaGreen;
             btnGetById.Cursor = Cursors.Hand;
             btnGetById.ForeColor = SystemColors.ControlLightLight;
-            btnGetById.Location = new Point(222, 10);
+            btnGetById.Location = new Point(296, 40);
             btnGetById.Name = "btnGetById";
             btnGetById.Size = new Size(182, 111);
             btnGetById.TabIndex = 3;
@@ -58,11 +61,52 @@
             btnGetById.UseVisualStyleBackColor = false;
             btnGetById.Click += btnGetById_Click;
             // 
+            // btnCourse
+            // 
+            btnCourse.BackColor = Color.LightSeaGreen;
+            btnCourse.Cursor = Cursors.Hand;
+            btnCourse.ForeColor = SystemColors.ControlLightLight;
+            btnCourse.Location = new Point(512, 44);
+            btnCourse.Name = "btnCourse";
+            btnCourse.Size = new Size(182, 107);
+            btnCourse.TabIndex = 4;
+            btnCourse.Text = "Course";
+            btnCourse.UseVisualStyleBackColor = false;
+            btnCourse.Click += btnCourse_Click;
+            // 
+            // btnInstructorAdd
+            // 
+            btnInstructorAdd.BackColor = Color.DarkCyan;
+            btnInstructorAdd.Cursor = Cursors.Hand;
+            btnInstructorAdd.ForeColor = SystemColors.ControlLightLight;
+            btnInstructorAdd.Location = new Point(86, 155);
+            btnInstructorAdd.Name = "btnInstructorAdd";
+            btnInstructorAdd.Size = new Size(182, 111);
+            btnInstructorAdd.TabIndex = 5;
+            btnInstructorAdd.Text = "Student";
+            btnInstructorAdd.UseVisualStyleBackColor = false;
+            btnInstructorAdd.Click += btnInstructorAdd_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.SteelBlue;
+            button1.Cursor = Cursors.Hand;
+            button1.ForeColor = SystemColors.ControlLightLight;
+            button1.Location = new Point(296, 157);
+            button1.Name = "button1";
+            button1.Size = new Size(182, 111);
+            button1.TabIndex = 6;
+            button1.Text = "Student and Course";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(btnInstructorAdd);
+            Controls.Add(btnCourse);
             Controls.Add(btnGetById);
             Controls.Add(btnMainInstructor);
             Name = "FormMain";
@@ -74,5 +118,8 @@
 
         private Button btnMainInstructor;
         private Button btnGetById;
+        private Button btnCourse;
+        private Button btnInstructorAdd;
+        private Button button1;
     }
 }

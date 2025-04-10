@@ -151,3 +151,10 @@ E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-wi
 E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Department.FormDepartmentMain.resources
 E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Department.FormDepartmenGetAll.resources
 E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Department.FormDepartmentGetAndUpdate.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Department.FormDepartmentCreate.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Course.FormCourseMain.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Course.FormCourseGetAll.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Course.FormCourseGetByDepartment.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Course.FormCourseGetByInstructor.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Course.FormCourseCreate.resources
+E:\Mohamed\ITI\ITI-Projects\ITI-EF-CourseSystem\CourseSystem\obj\Debug\net9.0-windows\CourseSystem.Forms.Course.FormCourseUpdate.resources

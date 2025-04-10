@@ -81,6 +81,9 @@ namespace CourseSystem.Forms.Department
             {
                 managerDepartment.Update(departmentUpdate);
                 errorProvider1.Clear();
+                departments = managerDepartment.Get();
+                cbDepartment.DataSource = departments;
+
             }
             catch {
 

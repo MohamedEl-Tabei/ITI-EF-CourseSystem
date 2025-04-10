@@ -30,6 +30,7 @@
         {
             btnGetAll = new Button();
             btnGetAndUpdate = new Button();
+            btnInstructorAdd = new Button();
             SuspendLayout();
             // 
             // btnGetAll
@@ -37,7 +38,7 @@
             btnGetAll.BackColor = Color.MediumSeaGreen;
             btnGetAll.Cursor = Cursors.Hand;
             btnGetAll.ForeColor = SystemColors.ControlLightLight;
-            btnGetAll.Location = new Point(23, 26);
+            btnGetAll.Location = new Point(108, 124);
             btnGetAll.Name = "btnGetAll";
             btnGetAll.Size = new Size(141, 111);
             btnGetAll.TabIndex = 1;
@@ -50,7 +51,7 @@
             btnGetAndUpdate.BackColor = Color.SeaGreen;
             btnGetAndUpdate.Cursor = Cursors.Hand;
             btnGetAndUpdate.ForeColor = SystemColors.ControlLightLight;
-            btnGetAndUpdate.Location = new Point(199, 26);
+            btnGetAndUpdate.Location = new Point(284, 124);
             btnGetAndUpdate.Name = "btnGetAndUpdate";
             btnGetAndUpdate.Size = new Size(183, 111);
             btnGetAndUpdate.TabIndex = 3;
@@ -58,11 +59,25 @@
             btnGetAndUpdate.UseVisualStyleBackColor = false;
             btnGetAndUpdate.Click += btnGetAndUpdate_Click;
             // 
+            // btnInstructorAdd
+            // 
+            btnInstructorAdd.BackColor = Color.LightSeaGreen;
+            btnInstructorAdd.Cursor = Cursors.Hand;
+            btnInstructorAdd.ForeColor = SystemColors.ControlLightLight;
+            btnInstructorAdd.Location = new Point(499, 124);
+            btnInstructorAdd.Name = "btnInstructorAdd";
+            btnInstructorAdd.Size = new Size(141, 111);
+            btnInstructorAdd.TabIndex = 4;
+            btnInstructorAdd.Text = "Create";
+            btnInstructorAdd.UseVisualStyleBackColor = false;
+            btnInstructorAdd.Click += btnInstructorAdd_Click;
+            // 
             // FormDepartmentMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnInstructorAdd);
             Controls.Add(btnGetAndUpdate);
             Controls.Add(btnGetAll);
             Name = "FormDepartmentMain";
@@ -74,5 +89,6 @@
 
         private Button btnGetAll;
         private Button btnGetAndUpdate;
+        private Button btnInstructorAdd;
     }
 }

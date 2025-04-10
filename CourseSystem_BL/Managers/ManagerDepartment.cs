@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CourseSystem_BL.DTOs.Department;
+using CourseSystem_BL.DTOs.Instructor;
 using CourseSystem_DAL;
 
 namespace CourseSystem_BL
@@ -32,6 +33,17 @@ namespace CourseSystem_BL
             department.ManagerId = newDat.ManagerId;
             department.Location = newDat.Location;  
             repo.SaveChanges();
+        }
+        public void Create(DTODepartmentCreate newData)
+        {
+            var data = new Department(Guid.NewGuid(), newData.Name, newData.Location, newData.ManagerId);
+            if (!repo.IsManager(newData.ManagerId))
+            {
+                repo.Create(data);
+            }
+            else throw new Exception();
+            repo.SaveChanges();
+
         }
     }
 }

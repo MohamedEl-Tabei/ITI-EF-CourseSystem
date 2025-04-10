@@ -10,5 +10,6 @@ namespace CourseSystem_DAL
     public class RepoDepartment : Repository<Department>
     {
       public List<Department> GetDepartmentsWithManager() =>_context.Departments.Include(d=>d.Manager).OrderBy(d=>d.Name).ToList();
+       public bool IsManager(Guid id)=> _context.Departments.FirstOrDefault(d=>d.ManagerId==id)!=null;
     }
 }
