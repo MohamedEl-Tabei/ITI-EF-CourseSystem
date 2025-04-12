@@ -8,9 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CourseSystem.Forms.Course;
+using CourseSystem.Forms.CourseSession;
+using CourseSystem.Forms.CourseSessionAttendance;
 using CourseSystem.Forms.Department;
 using CourseSystem.Forms.Instructor;
 using CourseSystem.Forms.Student;
+using CourseSystem.Forms.StudentCourse;
 
 namespace CourseSystem.Forms
 {
@@ -43,6 +46,24 @@ namespace CourseSystem.Forms
         private void btnInstructorAdd_Click(object sender, EventArgs e)
         {
             var form = new FormStudentMain();
+            form.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var form = new FormStudentCourseMain();
+            form.ShowDialog();
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            var form = new FormCourseSessionMain();
+            form.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var form = new FormCourseSessionAttendanceMain();
             form.ShowDialog();
         }
     }

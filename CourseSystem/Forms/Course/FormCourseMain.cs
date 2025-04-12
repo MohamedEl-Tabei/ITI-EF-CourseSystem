@@ -44,7 +44,7 @@ namespace CourseSystem.Forms.Course
 
         private void btnGetAndUpdate_Click(object sender, EventArgs e)
         {
-            var form = new FormCourseUpdate();
+            var form = new FormCourseUpdateDelete();
             form.ShowDialog();
         }
     }

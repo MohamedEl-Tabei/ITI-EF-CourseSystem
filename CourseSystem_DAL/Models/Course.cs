@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CourseSystem_DAL.Models;
 
 namespace CourseSystem_DAL
 {
@@ -20,6 +21,8 @@ namespace CourseSystem_DAL
         public Guid InstructorId { get; set; }
         public Instructor Instructor { get; set; }
         #endregion
+        public List<StudentCourse> StudentCourses { get; set; }
+        public List<CourseSession> CourseSessions { get; set; }
 
         public Course(Guid id,string name,int duration,Guid departmentId,Guid instructorId)
         {
@@ -29,5 +32,6 @@ namespace CourseSystem_DAL
             DepartmentId = departmentId;
             InstructorId = instructorId;
         }
+       
     }
 }

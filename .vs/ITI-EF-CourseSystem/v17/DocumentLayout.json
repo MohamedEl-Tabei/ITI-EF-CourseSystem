@@ -1,12 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-EF-CourseSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{97957B25-223E-414C-ACE4-F23C292E085A}|CourseSystem\\CourseSystem.csproj|e:\\mohamed\\iti\\iti-projects\\iti-ef-coursesystem\\coursesystem\\forms\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97957B25-223E-414C-ACE4-F23C292E085A}|CourseSystem\\CourseSystem.csproj|solutionrelative:coursesystem\\forms\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormMain.cs [Design]",
+              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-EF-CourseSystem\\CourseSystem\\Forms\\FormMain.cs",
+              "RelativeDocumentMoniker": "CourseSystem\\Forms\\FormMain.cs",
+              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-EF-CourseSystem\\CourseSystem\\Forms\\FormMain.cs [Design]",
+              "RelativeToolTip": "CourseSystem\\Forms\\FormMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T21:05:14.161Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

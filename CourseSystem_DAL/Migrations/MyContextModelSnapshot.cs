@@ -236,6 +236,286 @@ namespace CourseSystem_DAL.Migrations
                         });
                 });
 
+            modelBuilder.Entity("CourseSystem_DAL.Models.CourseSession", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CourseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("InstructorId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("InstructorId");
+
+                    b.ToTable("CourseSessions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("217c3d9a-dda7-40ea-b9a2-a0d980c97a17"),
+                            CourseId = new Guid("1e33dd1b-3a4d-48f5-84c1-565170287dbf"),
+                            Date = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstructorId = new Guid("0e65f178-8ad3-442b-859f-48d6d964b044"),
+                            Title = "title1"
+                        },
+                        new
+                        {
+                            Id = new Guid("30308204-257c-43a3-b0a8-c18229693a15"),
+                            CourseId = new Guid("1e33dd1b-3a4d-48f5-84c1-565170287dbf"),
+                            Date = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstructorId = new Guid("0e65f178-8ad3-442b-859f-48d6d964b044"),
+                            Title = "title2"
+                        },
+                        new
+                        {
+                            Id = new Guid("739444d1-a7c9-4842-a421-7f6e4aa00050"),
+                            CourseId = new Guid("2ce2280b-8172-4045-8bdc-270794694177"),
+                            Date = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstructorId = new Guid("30a2d33f-c405-4b72-a7ad-b21e630ada5e"),
+                            Title = "title3"
+                        },
+                        new
+                        {
+                            Id = new Guid("a0054941-4cfc-4e01-a786-0b6eba49e257"),
+                            CourseId = new Guid("2ce2280b-8172-4045-8bdc-270794694177"),
+                            Date = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstructorId = new Guid("30a2d33f-c405-4b72-a7ad-b21e630ada5e"),
+                            Title = "title4"
+                        },
+                        new
+                        {
+                            Id = new Guid("ef7d718d-c2ea-4a19-b7d8-c2a2469b0598"),
+                            CourseId = new Guid("5ef659b6-d082-41d0-8f5d-984d883a3482"),
+                            Date = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstructorId = new Guid("b6e66f14-8e6d-4c03-9c12-753ed9e4f74d"),
+                            Title = "title5"
+                        },
+                        new
+                        {
+                            Id = new Guid("efe3251e-c1de-4fe1-89f1-be9000a3be78"),
+                            CourseId = new Guid("5ef659b6-d082-41d0-8f5d-984d883a3482"),
+                            Date = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstructorId = new Guid("b6e66f14-8e6d-4c03-9c12-753ed9e4f74d"),
+                            Title = "title6"
+                        });
+                });
+
+            modelBuilder.Entity("CourseSystem_DAL.Models.CourseSessionAttendance", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CourseSessionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Grade")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Notes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("StudentId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseSessionId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("CourseSessionAttendances");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("217c3d9a-dda7-40ea-b9a2-a0d980c97a11"),
+                            CourseSessionId = new Guid("217c3d9a-dda7-40ea-b9a2-a0d980c97a17"),
+                            Grade = 33,
+                            Notes = "note1",
+                            StudentId = new Guid("3670be78-8f4d-4bbe-b612-3f628e497896")
+                        },
+                        new
+                        {
+                            Id = new Guid("217c3d9a-dda7-40ea-b9a2-a0d980c97a12"),
+                            CourseSessionId = new Guid("30308204-257c-43a3-b0a8-c18229693a15"),
+                            Grade = 44,
+                            Notes = "note2",
+                            StudentId = new Guid("3670be78-8f4d-4bbe-b612-3f628e497896")
+                        },
+                        new
+                        {
+                            Id = new Guid("217c3d9a-dda7-40ea-b9a2-a0d980c97a13"),
+                            CourseSessionId = new Guid("739444d1-a7c9-4842-a421-7f6e4aa00050"),
+                            Grade = 55,
+                            Notes = "note3",
+                            StudentId = new Guid("3670be78-8f4d-4bbe-b612-3f628e497896")
+                        },
+                        new
+                        {
+                            Id = new Guid("217c3d9a-dda7-40ea-b9a2-a0d980c97a14"),
+                            CourseSessionId = new Guid("a0054941-4cfc-4e01-a786-0b6eba49e257"),
+                            Grade = 66,
+                            Notes = "note4",
+                            StudentId = new Guid("3670be78-8f4d-4bbe-b612-3f628e497896")
+                        },
+                        new
+                        {
+                            Id = new Guid("217c3d9a-dda7-40ea-b9a2-a0d980c97a15"),
+                            CourseSessionId = new Guid("ef7d718d-c2ea-4a19-b7d8-c2a2469b0598"),
+                            Grade = 77,
+                            Notes = "note5",
+                            StudentId = new Guid("3670be78-8f4d-4bbe-b612-3f628e497896")
+                        },
+                        new
+                        {
+                            Id = new Guid("217c3d9a-dda7-40ea-b9a2-a0d980c97a16"),
+                            CourseSessionId = new Guid("efe3251e-c1de-4fe1-89f1-be9000a3be78"),
+                            Grade = 88,
+                            Notes = "note6",
+                            StudentId = new Guid("3670be78-8f4d-4bbe-b612-3f628e497896")
+                        });
+                });
+
+            modelBuilder.Entity("CourseSystem_DAL.Models.Student", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Students");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("3670be78-8f4d-4bbe-b612-3f628e497896"),
+                            FirstName = "Mohamed",
+                            LastName = "Ziad",
+                            Phone = "01120210123"
+                        },
+                        new
+                        {
+                            Id = new Guid("67fd4e60-40f4-4842-97fa-8c331f862dcf"),
+                            FirstName = "Basem",
+                            LastName = "Ahmed",
+                            Phone = "01020210541"
+                        },
+                        new
+                        {
+                            Id = new Guid("7cadd23b-7b0a-4dab-9d32-9c2c1570caa4"),
+                            FirstName = "Ahmed",
+                            LastName = "Omer",
+                            Phone = "01020210789"
+                        },
+                        new
+                        {
+                            Id = new Guid("d69770e1-71a0-4ed8-b2eb-cc54fa78e46c"),
+                            FirstName = "Amr",
+                            LastName = "Mohamed",
+                            Phone = "01520210246"
+                        },
+                        new
+                        {
+                            Id = new Guid("eef11cbc-ef8c-4224-bc4a-e735412d10ea"),
+                            FirstName = "Ali",
+                            LastName = "Basem",
+                            Phone = "01220210456"
+                        },
+                        new
+                        {
+                            Id = new Guid("f1543e8b-4418-4ca8-9d17-223e3eaf7eee"),
+                            FirstName = "Omer",
+                            LastName = "Ali",
+                            Phone = "01220210897"
+                        },
+                        new
+                        {
+                            Id = new Guid("f7409cb7-c20d-4f2d-a69a-e695378e8ffc"),
+                            FirstName = "Ziad",
+                            LastName = "Amr",
+                            Phone = "01120210827"
+                        });
+                });
+
+            modelBuilder.Entity("CourseSystem_DAL.Models.StudentCourse", b =>
+                {
+                    b.Property<Guid>("CourseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("StudentId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("CourseId", "StudentId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("StudentCourses");
+
+                    b.HasData(
+                        new
+                        {
+                            CourseId = new Guid("1e33dd1b-3a4d-48f5-84c1-565170287dbf"),
+                            StudentId = new Guid("3670be78-8f4d-4bbe-b612-3f628e497896")
+                        },
+                        new
+                        {
+                            CourseId = new Guid("1e33dd1b-3a4d-48f5-84c1-565170287dbf"),
+                            StudentId = new Guid("67fd4e60-40f4-4842-97fa-8c331f862dcf")
+                        },
+                        new
+                        {
+                            CourseId = new Guid("2ce2280b-8172-4045-8bdc-270794694177"),
+                            StudentId = new Guid("3670be78-8f4d-4bbe-b612-3f628e497896")
+                        },
+                        new
+                        {
+                            CourseId = new Guid("2ce2280b-8172-4045-8bdc-270794694177"),
+                            StudentId = new Guid("67fd4e60-40f4-4842-97fa-8c331f862dcf")
+                        },
+                        new
+                        {
+                            CourseId = new Guid("5ef659b6-d082-41d0-8f5d-984d883a3482"),
+                            StudentId = new Guid("3670be78-8f4d-4bbe-b612-3f628e497896")
+                        },
+                        new
+                        {
+                            CourseId = new Guid("5ef659b6-d082-41d0-8f5d-984d883a3482"),
+                            StudentId = new Guid("67fd4e60-40f4-4842-97fa-8c331f862dcf")
+                        });
+                });
+
             modelBuilder.Entity("CourseSystem_DAL.Course", b =>
                 {
                     b.HasOne("CourseSystem_DAL.Department", "Department")
@@ -275,6 +555,70 @@ namespace CourseSystem_DAL.Migrations
                     b.Navigation("Department");
                 });
 
+            modelBuilder.Entity("CourseSystem_DAL.Models.CourseSession", b =>
+                {
+                    b.HasOne("CourseSystem_DAL.Course", "Course")
+                        .WithMany("CourseSessions")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CourseSystem_DAL.Instructor", "Instructor")
+                        .WithMany("CourseSessions")
+                        .HasForeignKey("InstructorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Instructor");
+                });
+
+            modelBuilder.Entity("CourseSystem_DAL.Models.CourseSessionAttendance", b =>
+                {
+                    b.HasOne("CourseSystem_DAL.Models.CourseSession", "CourseSession")
+                        .WithMany("CourseSessionAttendances")
+                        .HasForeignKey("CourseSessionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CourseSystem_DAL.Models.Student", "Student")
+                        .WithMany("CourseSessionAttendances")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("CourseSession");
+
+                    b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("CourseSystem_DAL.Models.StudentCourse", b =>
+                {
+                    b.HasOne("CourseSystem_DAL.Course", "Course")
+                        .WithMany("StudentCourses")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CourseSystem_DAL.Models.Student", "Student")
+                        .WithMany("CoursesStudent")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("CourseSystem_DAL.Course", b =>
+                {
+                    b.Navigation("CourseSessions");
+
+                    b.Navigation("StudentCourses");
+                });
+
             modelBuilder.Entity("CourseSystem_DAL.Department", b =>
                 {
                     b.Navigation("Courses");
@@ -284,9 +628,23 @@ namespace CourseSystem_DAL.Migrations
 
             modelBuilder.Entity("CourseSystem_DAL.Instructor", b =>
                 {
+                    b.Navigation("CourseSessions");
+
                     b.Navigation("Courses");
 
                     b.Navigation("ManagedDepartment");
+                });
+
+            modelBuilder.Entity("CourseSystem_DAL.Models.CourseSession", b =>
+                {
+                    b.Navigation("CourseSessionAttendances");
+                });
+
+            modelBuilder.Entity("CourseSystem_DAL.Models.Student", b =>
+                {
+                    b.Navigation("CourseSessionAttendances");
+
+                    b.Navigation("CoursesStudent");
                 });
 #pragma warning restore 612, 618
         }

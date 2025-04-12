@@ -53,9 +53,9 @@
             btnGetAndUpdate.ForeColor = SystemColors.ControlLightLight;
             btnGetAndUpdate.Location = new Point(284, 124);
             btnGetAndUpdate.Name = "btnGetAndUpdate";
-            btnGetAndUpdate.Size = new Size(183, 111);
+            btnGetAndUpdate.Size = new Size(206, 111);
             btnGetAndUpdate.TabIndex = 3;
-            btnGetAndUpdate.Text = "Get And Update";
+            btnGetAndUpdate.Text = "Get And Update And Delete ";
             btnGetAndUpdate.UseVisualStyleBackColor = false;
             btnGetAndUpdate.Click += btnGetAndUpdate_Click;
             // 
@@ -64,7 +64,7 @@
             btnInstructorAdd.BackColor = Color.LightSeaGreen;
             btnInstructorAdd.Cursor = Cursors.Hand;
             btnInstructorAdd.ForeColor = SystemColors.ControlLightLight;
-            btnInstructorAdd.Location = new Point(499, 124);
+            btnInstructorAdd.Location = new Point(532, 124);
             btnInstructorAdd.Name = "btnInstructorAdd";
             btnInstructorAdd.Size = new Size(141, 111);
             btnInstructorAdd.TabIndex = 4;

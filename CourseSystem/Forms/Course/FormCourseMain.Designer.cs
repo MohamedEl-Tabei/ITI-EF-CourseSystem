@@ -57,7 +57,7 @@
             btnGetAndUpdate.Name = "btnGetAndUpdate";
             btnGetAndUpdate.Size = new Size(238, 111);
             btnGetAndUpdate.TabIndex = 6;
-            btnGetAndUpdate.Text = "Get And Update";
+            btnGetAndUpdate.Text = "Get And Update And Delete";
             btnGetAndUpdate.UseVisualStyleBackColor = false;
             btnGetAndUpdate.Click += btnGetAndUpdate_Click;
             // 

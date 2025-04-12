@@ -13,6 +13,10 @@ namespace CourseSystem_DAL
         public List<Instructor> GetWithDepartment()=> _context.Set<Instructor>().Include(i=>i.Department).OrderBy(i => i.FirstName).ToList();
         public List<Instructor> GetByDepartment(Guid departmentId)=> _context.Set<Instructor>().Where(i=>i.DepartmentId==departmentId).Include(i=>i.Department).OrderBy(i => i.FirstName).ToList();
         public Instructor GetByPhone(string phone) => _context.Set<Instructor>().Include(i => i.Department).FirstOrDefault(i=>i.Phone==phone);
-
+        public void DeleteByDepartment(Guid deptId)
+        {
+            var courses = _context.Courses.Where(c => c.DepartmentId == deptId).ToList();
+            _context.Courses.RemoveRange(courses);
+        }
     }
 }

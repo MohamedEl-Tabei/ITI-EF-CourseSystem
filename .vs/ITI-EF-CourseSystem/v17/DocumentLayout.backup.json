@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-EF-CourseSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97957B25-223E-414C-ACE4-F23C292E085A}|CourseSystem\\CourseSystem.csproj|e:\\mohamed\\iti\\iti-projects\\iti-ef-coursesystem\\coursesystem\\forms\\course\\formcourseupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97957B25-223E-414C-ACE4-F23C292E085A}|CourseSystem\\CourseSystem.csproj|solutionrelative:coursesystem\\forms\\course\\formcourseupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D36395FD-15F4-46B7-9A85-8B0988C4EA88}|CourseSystem_BL\\CourseSystem_BL.csproj|e:\\mohamed\\iti\\iti-projects\\iti-ef-coursesystem\\coursesystem_bl\\managers\\managercourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D36395FD-15F4-46B7-9A85-8B0988C4EA88}|CourseSystem_BL\\CourseSystem_BL.csproj|solutionrelative:coursesystem_bl\\managers\\managercourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97957B25-223E-414C-ACE4-F23C292E085A}|CourseSystem\\CourseSystem.csproj|e:\\mohamed\\iti\\iti-projects\\iti-ef-coursesystem\\coursesystem\\forms\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97957B25-223E-414C-ACE4-F23C292E085A}|CourseSystem\\CourseSystem.csproj|solutionrelative:coursesystem\\forms\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ManagerCourse.cs",
-              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-EF-CourseSystem\\CourseSystem_BL\\Managers\\ManagerCourse.cs",
-              "RelativeDocumentMoniker": "CourseSystem_BL\\Managers\\ManagerCourse.cs",
-              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-EF-CourseSystem\\CourseSystem_BL\\Managers\\ManagerCourse.cs",
-              "RelativeToolTip": "CourseSystem_BL\\Managers\\ManagerCourse.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAkwEQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T18:39:45.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormCourseUpdate.cs",
-              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-EF-CourseSystem\\CourseSystem\\Forms\\Course\\FormCourseUpdate.cs",
-              "RelativeDocumentMoniker": "CourseSystem\\Forms\\Course\\FormCourseUpdate.cs",
-              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-EF-CourseSystem\\CourseSystem\\Forms\\Course\\FormCourseUpdate.cs",
-              "RelativeToolTip": "CourseSystem\\Forms\\Course\\FormCourseUpdate.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAIA+wEgAAAAzAAAAAAAAAA==",
+              "Title": "FormMain.cs [Design]",
+              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-EF-CourseSystem\\CourseSystem\\Forms\\FormMain.cs",
+              "RelativeDocumentMoniker": "CourseSystem\\Forms\\FormMain.cs",
+              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-EF-CourseSystem\\CourseSystem\\Forms\\FormMain.cs [Design]",
+              "RelativeToolTip": "CourseSystem\\Forms\\FormMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T17:31:46.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T21:05:14.161Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

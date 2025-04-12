@@ -13,9 +13,12 @@ namespace CourseSystem_BL
     public class ManagerDepartment
     {
         private readonly RepoDepartment repo;
+        private readonly RepoCourse repoCourse;
+        private readonly RepoInstructor repoInstructor;
         public ManagerDepartment()
         {
             repo = new RepoDepartment();
+            repoCourse = new RepoCourse();
         }
         public List<DTODepartmentRead> Get() => repo.Get().Select(d => new DTODepartmentRead { Id = d.Id, Location = d.Location, Name = d.Name, Manager = "" }).OrderBy(d => d.Name).ToList();
         public List<DTODepartmentRead> GetDepartmentsWithManager() => repo.GetDepartmentsWithManager().Select(d => new DTODepartmentRead { Id = d.Id, Location = d.Location, Name = d.Name, Manager = $"{d.Manager.FirstName} {d.Manager.LastName}" }).OrderBy(d => d.Name).ToList();
@@ -27,11 +30,12 @@ namespace CourseSystem_BL
             return result;
 
         }
-        public void Update(DTODepartmentUpdate newDat) {
-            var department=repo.GetById(newDat.Id);
+        public void Update(DTODepartmentUpdate newDat)
+        {
+            var department = repo.GetById(newDat.Id);
             department.Name = newDat.Name;
             department.ManagerId = newDat.ManagerId;
-            department.Location = newDat.Location;  
+            department.Location = newDat.Location;
             repo.SaveChanges();
         }
         public void Create(DTODepartmentCreate newData)
@@ -42,6 +46,18 @@ namespace CourseSystem_BL
                 repo.Create(data);
             }
             else throw new Exception();
+            repo.SaveChanges();
+
+        }
+        public void Delete(Guid id)
+        {
+            var data = repo.GetById(id);
+            //repoCourse.DeleteByDepartment(id);
+            //repoCourse.SaveChanges();
+            //repoInstructor.DeleteByDepartment(id);
+            //repoInstructor.SaveChanges();
+
+            repo.Delete(data);
             repo.SaveChanges();
 
         }

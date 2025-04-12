@@ -55,9 +55,9 @@
             btnUpdate.ForeColor = SystemColors.ControlLightLight;
             btnUpdate.Location = new Point(393, 62);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(141, 111);
+            btnUpdate.Size = new Size(171, 111);
             btnUpdate.TabIndex = 1;
-            btnUpdate.Text = "Update";
+            btnUpdate.Text = "Update And Delete";
             btnUpdate.UseVisualStyleBackColor = false;
             btnUpdate.Click += btnInstructorUpdate_Click;
             // 

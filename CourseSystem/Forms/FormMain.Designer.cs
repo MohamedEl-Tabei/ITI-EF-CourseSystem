@@ -33,6 +33,8 @@
             btnCourse = new Button();
             btnInstructorAdd = new Button();
             button1 = new Button();
+            btn = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // btnMainInstructor
@@ -98,12 +100,41 @@
             button1.TabIndex = 6;
             button1.Text = "Student and Course";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // btn
+            // 
+            btn.BackColor = Color.CornflowerBlue;
+            btn.Cursor = Cursors.Hand;
+            btn.ForeColor = SystemColors.ControlLightLight;
+            btn.Location = new Point(512, 157);
+            btn.Name = "btn";
+            btn.Size = new Size(182, 111);
+            btn.TabIndex = 7;
+            btn.Text = "Course Session";
+            btn.UseVisualStyleBackColor = false;
+            btn.Click += btn_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.MidnightBlue;
+            button2.Cursor = Cursors.Hand;
+            button2.ForeColor = SystemColors.ControlLightLight;
+            button2.Location = new Point(86, 272);
+            button2.Name = "button2";
+            button2.Size = new Size(608, 111);
+            button2.TabIndex = 8;
+            button2.Text = "Course Session Attendence";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
+            Controls.Add(btn);
             Controls.Add(button1);
             Controls.Add(btnInstructorAdd);
             Controls.Add(btnCourse);
@@ -121,5 +152,7 @@
         private Button btnCourse;
         private Button btnInstructorAdd;
         private Button button1;
+        private Button btn;
+        private Button button2;
     }
 }

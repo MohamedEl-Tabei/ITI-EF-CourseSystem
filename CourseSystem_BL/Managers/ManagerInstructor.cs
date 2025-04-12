@@ -12,9 +12,11 @@ namespace CourseSystem_BL.Managers
     public class ManagerInstructor
     {
         private readonly RepoInstructor repo;
+        private readonly RepoCourse repoCourse;
         public ManagerInstructor()
         {
             repo = new RepoInstructor();
+            repoCourse = new RepoCourse();
         }
         public List<DTOInstructorRead> GetWithDepartment()
         {
@@ -95,7 +97,14 @@ namespace CourseSystem_BL.Managers
 
             return result;
         }
-        
+        public void Delete(Guid id)
+        {
+            var data = repo.GetById(id);
+            repoCourse.DeleteByInsstructor(id);
+            repoCourse.SaveChanges();
+            repo.Delete(data);
+            repo.SaveChanges();
+        }
         public List<DTOInstructorPhone> InstructorsPhone() => repo.Get().Select(i => new DTOInstructorPhone() { Phone = i.Phone, Id = i.Id, Name = $"{i.FirstName} {i.LastName}" }).OrderBy(p => p.Name).ToList();
     }
 }

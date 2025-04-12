@@ -16,5 +16,23 @@ namespace CourseSystem.Forms.Student
         {
             InitializeComponent();
         }
+
+        private void btnGetAll_Click(object sender, EventArgs e)
+        {
+            var form = new FormStudentGet();
+            form.ShowDialog();
+        }
+
+        private void btnInstructorAdd_Click(object sender, EventArgs e)
+        {
+            var form = new FormStudentCreate();
+            form.ShowDialog();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            var form = new FormStudentUpdateDelete();
+            form.ShowDialog();
+        }
     }
 }

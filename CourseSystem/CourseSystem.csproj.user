@@ -1,6 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Forms\CourseSessionAttendance\FormCourseSessionAttendanceCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CourseSessionAttendance\FormCourseSessionAttendanceGet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CourseSessionAttendance\FormCourseSessionAttendanceMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CourseSessionAttendance\FormCourseSessionAttendanceUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CourseSession\FormCourseSessionCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CourseSession\FormCourseSessionGet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CourseSession\FormCourseSessionMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CourseSession\FormCourseSessionUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Course\FormCourseCreate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -16,7 +40,7 @@
     <Compile Update="Forms\Course\FormCourseMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Course\FormCourseUpdate.cs">
+    <Compile Update="Forms\Course\FormCourseUpdateDelete.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Department\FormDepartmenGetAll.cs">
@@ -25,7 +49,7 @@
     <Compile Update="Forms\Department\FormDepartmentCreate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Department\FormDepartmentGetAndUpdate.cs">
+    <Compile Update="Forms\Department\FormDepartmentGetAndUpdateAndDelete.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Department\FormDepartmentMain.cs">
@@ -49,10 +73,31 @@
     <Compile Update="Forms\Instructor\FormInstructorMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Instructor\FormInstructorUpdate.cs">
+    <Compile Update="Forms\Instructor\FormInstructorUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\StudentCourse\FormStudentCourseCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\StudentCourse\FormStudentCourseDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\StudentCourse\FormStudentCourseGet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\StudentCourse\FormStudentCourseMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Student\FormStudentCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Student\FormStudentGet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Student\FormStudentMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Student\FormStudentUpdateDelete.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

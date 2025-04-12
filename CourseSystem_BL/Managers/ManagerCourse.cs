@@ -107,5 +107,11 @@ namespace CourseSystem_BL.Managers
 
 
         }
+        public void Delete(Guid id)
+        {
+            var data = repo.GetById(id);
+            repo.Delete(data);
+            repo.SaveChanges();
+        }
     }
 }

@@ -25,7 +25,7 @@ namespace CourseSystem.Forms.Instructor
 
         private void btnInstructorUpdate_Click(object sender, EventArgs e)
         {
-            var formInstructorUpdate = new FormInstructorUpdate();
+            var formInstructorUpdate = new FormInstructorUpdateDelete();
             formInstructorUpdate.ShowDialog();
         }
 

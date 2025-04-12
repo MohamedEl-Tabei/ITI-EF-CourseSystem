@@ -26,7 +26,7 @@ namespace CourseSystem.Forms.Department
 
         private void btnGetAndUpdate_Click(object sender, EventArgs e)
         {
-            var formDepartmentGetAndUpdate = new FormDepartmentGetAndUpdate();
+            var formDepartmentGetAndUpdate = new FormDepartmentGetAndUpdateAndDelete();
             formDepartmentGetAndUpdate.ShowDialog();
         }
 

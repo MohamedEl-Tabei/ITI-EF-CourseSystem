@@ -17,6 +17,7 @@ namespace CourseSystem_DAL
         public  List<T> Get()=> _context.Set<T>().ToList();
         public T GetById(Guid id) => _context.Set<T>().Find(id);
         public void Create(T t)=>_context.Set<T>().Add(t);
+        public void Delete(T t)=>_context.Set<T>().Remove(t);
         public void SaveChanges()=>_context.SaveChanges();
 
     }
